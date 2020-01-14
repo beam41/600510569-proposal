@@ -8,7 +8,7 @@ class BasicModuleList extends Component {
         <span className="title">{`Basic Module${
           this.props.basicMod.length > 1 ? "s" : ""
         }`}</span>
-        <ol clasName="basicMod">
+        <ol className="basicMod">
           {this.props.basicMod.map((val, index) => {
             return (
               <li key={index} className={index % 3}>
