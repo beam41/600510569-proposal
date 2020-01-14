@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { render } from 'react-dom';
+import React, { Component } from "react";
+import { render } from "react-dom";
 
 class ProjName extends Component {
   render() {
@@ -7,7 +7,7 @@ class ProjName extends Component {
       <div className="box">
         <h1 className="head">{this.props.projName}</h1>
       </div>
-    )
+    );
   }
 }
 
