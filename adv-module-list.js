@@ -8,7 +8,7 @@ class AdvModuleList extends Component {
         <span className="title nobot">{`Advanced Module${
           this.props.advanceMod.length > 1 ? "s" : ""
         }`}</span>
-        <ol basicMod="advanceMod">
+        <ol className="advanceMod">
           {this.props.advanceMod.map((val, index) => {
             return (
               <li key={index} className={index % 3}>
