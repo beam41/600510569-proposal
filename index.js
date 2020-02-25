@@ -6,6 +6,7 @@ import ProjAd from "./proj-ad";
 import BasicModuleList from "./basic-module-list";
 import AdvModuleList from "./adv-module-list";
 import "./style.css";
+import comp from "./comp.svg";
 
 class App extends Component {
   constructor() {
@@ -31,16 +32,20 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
-        <ProjName projName={this.state.projName} />
-        <NameHead
-          name={this.state.name}
-          lname={this.state.lname}
-          stdCode={this.state.stdCode}
-        />
-        <ProjAd projAd={this.state.projAd} />
-        <BasicModuleList basicMod={this.state.basicMod} />
-        <AdvModuleList advanceMod={this.state.advanceMod} />
+      <div className="app">
+        <div className="container">
+          <ProjName projName={this.state.projName} />
+          <NameHead
+            name={this.state.name}
+            lname={this.state.lname}
+            stdCode={this.state.stdCode}
+          />
+          <ProjAd projAd={this.state.projAd} />
+          <BasicModuleList basicMod={this.state.basicMod} />
+          <AdvModuleList advanceMod={this.state.advanceMod} />
+          
+        </div>
+        <img src={comp} alt="Component info"/>
       </div>
     );
   }
