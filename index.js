@@ -26,7 +26,8 @@ class App extends Component {
       advanceMod: [
         "ระบบลบห้องเมื่อผ่านไปช่วงเวลาหนึ่ง หรือผู้ใช้กดลบเอง",
         "รหัสผ่านของห้อง เมื่อผู้ใช้ต้องการเข้าใช้งานห้อง"
-      ]
+      ],
+      link: "https://project600510569-32c6d.firebaseapp.com/"
     };
   }
 
@@ -43,7 +44,7 @@ class App extends Component {
           <ProjAd projAd={this.state.projAd} />
           <BasicModuleList basicMod={this.state.basicMod} />
           <AdvModuleList advanceMod={this.state.advanceMod} />
-          
+          <a href={this.state.link}>{this.state.link}</a>
         </div>
         <img src={comp} alt="Component info"/>
       </div>
