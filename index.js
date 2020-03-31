@@ -43,7 +43,6 @@ class App extends Component {
           <ProjAd projAd={this.state.projAd} />
           <BasicModuleList basicMod={this.state.basicMod} />
           <AdvModuleList advanceMod={this.state.advanceMod} />
-          <a href={this.state.link}>{this.state.link}</a>
         </div>
         <img src={comp} alt="Component info"/>
       </div>
